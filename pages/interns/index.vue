@@ -26,9 +26,9 @@
     </div>
     <div class="sidebar">
       <div v-for="post in blog_posts" :key="post.id" style="display: flex; justify-content: center">
-        <a href="`#${post.uid}`">
+        <nuxt-link :to="`#${post.uid}`">
           <img class="icon" :src="post.picture.url" />
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </div>

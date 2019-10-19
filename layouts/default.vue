@@ -9,7 +9,6 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-
     <v-content>
       <v-container>
         <nuxt />
