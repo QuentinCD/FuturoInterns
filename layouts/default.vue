@@ -9,6 +9,9 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
+    <v-app-bar :clipped-left="clipped" app>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+    </v-app-bar>
     <v-content>
       <v-container>
         <nuxt />
@@ -24,6 +27,8 @@
 export default {
   data() {
     return {
+      drawer: false,
+      clipped: false,
       items: [
         {
           title: "Welcome",
