@@ -1,0 +1,15 @@
+.card_width_80 {
+  width: 80%
+}
+
+.card_width_40 {
+  width: 40%
+}
+
+.card_width_px {
+  width: 500px
+}
+
+html {
+  scroll-behavior: smooth;
+}

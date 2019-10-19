@@ -1,8 +1,8 @@
 <template>
   <div>
-    <carousel :perPage="3" :scrollPerPage="false">
+    <carousel :scrollPerPage="false" :perPageCustom="[[480,1],[768, 2],[1024,3]]">
       <slide v-for="post in blog_posts" :key="post.uid">
-        <v-card class="mx-auto" max-width="500" :to="`/intern/${post.uid}`">
+        <v-card class="mx-auto" width="500" :to="`/interns/${post.uid}`">
           <v-img max-height="250" :src="post.picture.url"></v-img>
           <v-card-title>{{ post.title }}</v-card-title>
           <v-card-subtitle>{{ post.subtitle }}</v-card-subtitle>
