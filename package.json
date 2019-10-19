@@ -1,0 +1,22 @@
+{
+  "name": "Futuro_Intern_Presentation",
+  "version": "1.0.0",
+  "description": "My rad Nuxt.js project",
+  "author": "Wharfan",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "prismic-dom": "^2.1.0",
+    "prismic-javascript": "^2.1.1",
+    "vue-carousel": "^0.18.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.0.0"
+  }
+}
