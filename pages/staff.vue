@@ -35,7 +35,7 @@
               <v-img max-height="100" max-width="100" src="v.png"></v-img>
               <v-list-item-content>
                 <v-card-title>Liberale Donato</v-card-title>
-                <v-card-subtitle>Web Content Management</v-card-subtitle>
+                <v-card-subtitle>Web Content Management or smth</v-card-subtitle>
               </v-list-item-content>
             </v-list-item>
             <v-card-text align="center">Some random text to fill out the blank</v-card-text>
