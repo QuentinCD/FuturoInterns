@@ -22,7 +22,7 @@
             <v-list-item>
               <v-img max-height="100" max-width="100" src="v.png"></v-img>
               <v-list-item-content>
-                <v-card-title>Alessandra ???</v-card-title>
+                <v-card-title>Alessandra Blois</v-card-title>
                 <v-card-subtitle>Adminstration or smth</v-card-subtitle>
               </v-list-item-content>
             </v-list-item>
@@ -34,7 +34,7 @@
             <v-list-item>
               <v-img max-height="100" max-width="100" src="v.png"></v-img>
               <v-list-item-content>
-                <v-card-title>Liberale ???</v-card-title>
+                <v-card-title>Liberale Donato</v-card-title>
                 <v-card-subtitle>Web Content Management</v-card-subtitle>
               </v-list-item-content>
             </v-list-item>

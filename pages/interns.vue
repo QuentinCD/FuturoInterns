@@ -27,7 +27,7 @@
     <div class="sidebar">
       <div v-for="post in blog_posts" :key="post.id" style="display: flex; justify-content: center">
         <nuxt-link :to="`#${post.uid}`">
-          <img class="icon" :src="post.picture.url" />
+          <img class="icon" :src="post.avatar.url" />
         </nuxt-link>
       </div>
     </div>
@@ -44,17 +44,18 @@ export default {
     const api = await Prismic.getApi(PrismicConfig.apiEndpoint);
     let unformated_blog_posts = [];
     const results = await api.query(
-      Prismic.Predicates.at("document.type", "blogpost")
+      Prismic.Predicates.at("document.type", "intern_card")
     );
     unformated_blog_posts = results.results;
 
     const blog_posts = unformated_blog_posts.map(post => ({
       ...post,
       uid: post.uid,
-      title: PrismicDom.RichText.asHtml(post.data.blog_post_title),
-      subtitle: PrismicDom.RichText.asHtml(post.data.blog_work_departement),
-      picture: post.data.blog_picture,
-      content: PrismicDom.RichText.asHtml(post.data.blog_content)
+      title: PrismicDom.RichText.asHtml(post.data.name_and_surname),
+      subtitle: PrismicDom.RichText.asHtml(post.data.work_departement),
+      picture: post.data.intern_picture,
+      avatar: post.data.intern_avatar,
+      content: PrismicDom.RichText.asHtml(post.data.description)
     }));
 
     return {

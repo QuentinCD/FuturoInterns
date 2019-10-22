@@ -41,6 +41,10 @@ export default {
         {
           title: "Interns",
           to: "/interns"
+        },
+        {
+          title: "Tasks",
+          to: "/tasks"
         }
       ],
       title: "Vuetify.js"

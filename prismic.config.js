@@ -1,3 +1,3 @@
 export default {
-  apiEndpoint: "https://futuroblog.prismic.io/api/v2",
+  apiEndpoint: "https://futurodigitale-interns.prismic.io/api/v2",
 }
