@@ -41,7 +41,17 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/pwa',
   ],
+  pwa: {
+    manifest: {
+      name: "Futuro Digitale Intern presentation",
+      short_name: "FD Intern Presentation",
+      lang: "en",
+      start_url: ".",
+      display: "standalone",
+    }
+  },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
