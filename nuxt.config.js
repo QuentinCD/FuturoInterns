@@ -44,13 +44,11 @@ export default {
   modules: [
     '@nuxtjs/pwa',
   ],
-  pwa: {
-    manifest: {
-      name: "Futuro Digitale Intern presentation",
-      short_name: "FD Intern Presentation",
-      lang: "en",
-      display: "standalone",
-    }
+  manifest: {
+    name: "Futuro Digitale Intern presentation",
+    short_name: "FD Intern Presentation",
+    lang: "en",
+    display: "standalone",
   },
   workbox: {
     runtimeCaching: [
