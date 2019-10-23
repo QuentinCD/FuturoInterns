@@ -30,7 +30,8 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [{ src: '~plugins/vue-carousel', ssr: false }],
+  plugins: [
+  ],
   /*
   ** Nuxt.js dev-modules
   */
@@ -48,9 +49,17 @@ export default {
       name: "Futuro Digitale Intern presentation",
       short_name: "FD Intern Presentation",
       lang: "en",
-      start_url: ".",
       display: "standalone",
     }
+  },
+  workbox: {
+    runtimeCaching: [
+      {
+        urlPattern: 'https://futurodigitale-interns.prismic.io/api/v2',
+        handler: 'cacheFirst',
+        method: 'GET'
+      }
+    ]
   },
   /*
   ** vuetify module configuration
